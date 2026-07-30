@@ -1,0 +1,88 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100svh;
+
+    >header {
+        grid-area: header;
+        padding: var(--space-2) var(--space-3);
+        border-block-end: var(--border);
+        background: var(--panel);
+    }
+
+    >nav {
+        grid-area: nav;
+    }
+
+    >main {
+        grid-area: main;
+        padding: var(--space-3);
+
+        >div#fresh {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/cheese-fresh.svg");
+            background-repeat: no-repeat;
+            view-transition-name: fresh;
+        }
+
+        >div#soft {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/cheese-soft.svg");
+            background-repeat: no-repeat;
+            view-transition-name: soft;
+        }
+
+        >div#hard {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/cheese-hard.svg");
+            background-repeat: no-repeat;
+            view-transition-name: hard;
+        }
+
+        >div#blue {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/cheese-blue.svg");
+            background-repeat: no-repeat;
+            view-transition-name: blue;
+        }
+    }
+
+    >footer {
+        grid-area: footer;
+        padding: var(--space-2) var(--space-3);
+        border-block-start: var(--border);
+        background: var(--panel);
+
+        display: grid;
+        grid-template-areas:
+            "left center right";
+        grid-template-columns: auto 1fr auto;
+
+        >p {
+            grid-area: center;
+            text-align: center;
+        }
+
+        >left-nav {
+            grid-area: left;
+        }
+
+        >right-nav {
+            grid-area: right;
+        }
+    }
+
+}
+
+::view-transition-group(fresh, soft, hard, blue) {
+    animation-duration: 1s;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheese Guide</title>
+  <meta name="description" content="Membership form for the CSE cheese society site.">
+  <link rel="stylesheet" href="../styles/vars.css">
+  <link rel="stylesheet" href="../styles/site.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/guide_index.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="../images/logo.svg" alt="The CSE Cheese Society logo">
+    <h1>Join us!</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Homepage</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="index.html">Guide</a>
+        <ul>
+          <li><a href="fresh.html">fresh</a></li>
+          <li><a href="soft.html">soft</a></li>
+        </ul>
+      </li>
+      <li><a href="../join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Introduction to Cheese</h2>
+      <p>
+        Cheese is one of humanity's oldest prepared foods. People have made it
+        for at least 7,000 years, long before written history. At its core,
+        cheese is simple: milk, salt, cultures, and rennet. Time and technique
+        do the rest.
+      </p>
+      <section>
+        <h2>What Is Cheese, Really?</h2>
+        <p>
+          Cheese begins when milk separates into curds and whey. The curds are
+          pressed, salted, and aged. Every variable matters: the animal, the
+          season, the cave, the patience of the maker. Change one and you get a
+          different cheese. This is why a single recipe has produced thousands
+          of distinct varieties.
+
+        </p>
+        <p>
+          The word <q>cheese</q> comes from the Latin <span class="latin" lang="la">caseus</span>, which also gives us
+          the
+          word <q>casein</q>, the main milk protein.
+        </p>
+      </section>
+      <section>
+        <h2>
+          Famous Families of Cheese
+
+        </h2>
+
+        <dl>
+          <dt>Fresh</dt>
+          <dd>
+            <p>
+              Fresh cheeses are young and mild. They include mozzarella, ricotta,
+              and chevre. Eat these within days.
+            </p>
+            <picture>
+              <img src="../images/cheese-fresh.svg" alt="fresh cheese" width="200" height="200" id="fresh">
+            </picture>
+
+            <a href="fresh.html">Learn more</a>
+          </dd>
+
+          <dt>
+            Soft-ripened
+          </dt>
+          <dd>
+            <p>
+              Soft-ripened cheeses grow a white bloomy rind. Brie and Camembert are
+              the classic examples. The rind is edible and you should eat it.
+            </p>
+            <picture>
+              <img src="../images/cheese-soft.svg" alt="soft cheese" width="200" height="200" id="soft">
+            </picture>
+
+            <a href="soft.html">Learn more</a>
+          </dd>
+
+          <dt>
+            Blue
+          </dt>
+          <dd>
+            <p>
+              Blue cheeses are veined with <span class="latin" lang="la">Penicillium roqueforti</span>. Roquefort,
+              Gorgonzola, and Stilton lead this family. They are salty, sharp, and
+              divisive.
+            </p>
+            <picture>
+              <img src="../images/cheese-blue.svg" alt="blue cheese" width="200" height="200" id="blue">
+            </picture>
+
+            <a href="blue.html">Learn more</a>
+          </dd>
+
+          <dt>Hard</dt>
+          <dd>
+            <p>
+              Hard cheeses are aged for months or years. Parmigiano-Reggiano,
+              aged Gouda, and Comte reward the wait with crystals of crunch and
+              deep, nutty flavor.
+            </p>
+            <picture>
+              <img src="../images/cheese-hard.svg" alt="hard cheese" width="200" height="200" id="hard">
+            </picture>
+
+            <a href="hard.html">Learn more</a>
+          </dd>
+        </dl>
+
+      </section>
+      <section>
+        <h2>A Word of Caution</h2>
+
+        <p id="warning">
+          The American product known as <q>processed cheese food</q> is,
+          at best, distantly related to cheese. Read the label.
+        </p>
+
+        <blockquote>
+          <p>
+            Cheese is milk's leap toward immortality.
+          </p>
+          <footer>
+            <p>&#8212; attributed to <cite>Clifton Fadiman</cite></p>
+          </footer>
+        </blockquote>
+      </section>
+      <section>
+        <h2>
+          Try It Yourself
+        </h2>
+
+        <form>
+          <fieldset>
+            <legend>Which of these have you tasted?</legend>
+            <div>
+              <input type="checkbox" name="brie" id="brie">
+              <label for="brie">Brie</label>
+            </div>
+            <div>
+              <input type="checkbox" name="roquefort" id="roquefort">
+              <label for="roquefort">Roquefort</label>
+            </div>
+            <div>
+              <input type="checkbox" name="aged-gouda" id="aged-gouda">
+              <label for="aged-gouda">Aged Gouda</label>
+            </div>
+          </fieldset>
+          <label for="fav-cheese">Tell us your favorite cheese:</label>
+          <input type="text" name="fav-cheese" placeholder="e.g. Comt&#233;" id="fav-cheese">
+          <button type="submit">Add it to the guide</button>
+        </form>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>Copyright 2026 <a href="https://ucsd.edu">The CSE Cheese Society</a>. Cheese responsibly.</p>
+  </footer>
+</body>
+
+</html>

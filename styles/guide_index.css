@@ -1,0 +1,45 @@
+body {
+    padding: var(--space-3);
+    
+    #fresh {
+        view-transition-name: fresh;
+    }
+    #soft{
+        view-transition-name: soft;
+    }
+    #hard{
+        view-transition-name: hard;
+    }
+    #blue{
+        view-transition-name: blue;
+    }
+
+    picture {
+        > img{
+            max-width: 100%;
+        }
+    }
+}
+
+section {
+    > p {
+        padding: var(--space-2);
+        border: var(--border);
+        background: var(--panel);
+    }
+
+    strong,
+    em {
+        background: var(--paper);
+        outline: var(--border-width) var(--border-style) var(--accent);
+    }
+}
+
+article {
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding: var(--space-2) var(--space-3);
+    border-inline-start: var(--rule);
+    background: var(--panel);
+}
+

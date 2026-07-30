@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The CSE Cheese Society</title>
+  <meta name="description" content="CSE cheese society site, explaining some cheeses.">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/vars.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <header>
+    <img src="../images/logo.svg" alt="The CSE Cheese Society logo">
+    <h1>The CSE Cheese Society</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guide/index.html">Guide</a>
+        <ul>
+          <li><a href="guide/fresh.html">fresh</a></li>
+          <li><a href="guide/soft.html">soft</a></li>
+        </ul>
+      </li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+
+      <h2>welcome to mycheesesite!</h2>
+
+      <p>Cheese is a type of dairy product produced in a range of flavors, textures,
+        and forms by coagulation of the milk protein casein. It is composed of proteins
+        and fat from milk, usually of cows, goats or sheep, and sometimes of water buffalo.
+        During production, milk is usually acidified and either the enzymes of rennet or
+        bacterial enzymes with similar activity are added to cause the casein to coagulate.
+        The solid curds are then separated from the liquid whey and pressed into finished cheese.
+        Some cheeses have aromatic molds on the rind, the outer layer, or throughout.</p>
+
+      <p>Source: <cite>Cheese</cite> - <a href="https://en.wikipedia.org/wiki/Cheese">Wikipedia</a></p>
+
+      <p>As of the current moment, I'm not a big cheese eater, but I used to eat a lot of cheese when I was younger.
+        Babybel and string cheese used to be classic hits. The last snack-type cheese that I've purchased was
+        <em lang="it">Bocconcini</em>, small bite-sized balls of fresh mozzarella.
+      </p>
+
+      <blockquote>
+        <p>I dunno, there are a lot of great cheeses out there. I like trying a bunch of different ones.</p>
+        <p>&#x2014; <cite>my roommate</cite>, who has 5 cheeses in the fridge.</p>
+      </blockquote>
+
+      <button commandfor="mypopover" command="toggle-popover">
+        Cheese Fact!
+      </button>
+      <dialog id="mypopover" popover>
+        <p>
+          The word cheese comes from Latin caseus, from which the modern word casein is derived. <cite>Wikipedia</cite>
+        </p>
+        <button commandfor="mypopover" command="hide-popover">Close</button>
+      </dialog>
+
+    </article>
+  </main>
+
+  <aside>
+    <h2>Cheese of the Month</h2>
+    <p>Cheese of the month: <strong>Morbier</strong>.</p>
+    <p>Morbier is a semi-soft cows' milk cheese of France named after the small village of Morbier in <em
+        lang="fr">Franche-Comté</em>.
+      It is ivory colored, soft and slightly elastic, and is immediately recognizable by the distinctive thin
+      black layer separating it horizontally in the middle. It has a yellowish, sticky rind.</p>
+    <p>Source: <cite>Morbier cheese</cite> - <a href="https://en.wikipedia.org/wiki/Morbier_cheese">Wikipedia</a></p>
+  </aside>
+  <footer>
+    <p>Copyright 2026 <a href="https://ucsd.edu">The CSE Cheese Society</a>. Cheese responsibly.</p>
+  </footer>
+</body>
+
+</html>
